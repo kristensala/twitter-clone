@@ -1,0 +1,32 @@
+create table t142359_user_image
+(
+id      INT       NOT NULL AUTO_INCREMENT,
+user_id INT       NOT NULL,
+image
+text
+PRIMARY KEY (id)
+);
+
+
+create table t142359_user_tweet
+(
+id      INT       NOT NULL AUTO_INCREMENT,
+user_id INT       NOT NULL,
+tweet   VARCHAR(500) NULL,
+PRIMARY KEY (id),
+FOREIGN KEY (user_id) references t142359v1_users(id)
+)
+
+select tweet from t142359_user_tweet as user_tweet inner join t142359_users as users on user_tweet.user_id=users.id
+
+
+create table t142359v1_users
+(
+id      INT       NOT NULL AUTO_INCREMENT,
+username VARCHAR(25)       NOT NULL UNIQUE,
+password   VARCHAR(25) NOT NULL,
+email VARCHAR(255) NOT NULL UNIQUE,
+about_info
+image BLOB NULL,
+PRIMARY KEY (id)
+);

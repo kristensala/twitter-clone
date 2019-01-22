@@ -1,0 +1,56 @@
+body {
+    background: url('../img/login_background.jpg') no-repeat 50% 50% fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+#glyphicon {
+    font-size: 20px;
+}
+
+.profile {
+    width: 1000px;
+    min-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+#about {
+  width: 50px;
+}
+
+.profileInfo {
+    float: left;
+    width: 25%;
+    height: 500px;
+    background-color: whitesmoke;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+
+}
+
+.tweets {
+    text-align: center;
+    float: left;
+    width: 53%;
+    min-height: 500px;
+    background-color: whitesmoke;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px 10px 10px 10px;
+    padding-top: 10px;
+
+}
+
+.following {
+    float: left;
+    width: 20%;
+    height: 500px;
+    background-color: whitesmoke;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+
+}

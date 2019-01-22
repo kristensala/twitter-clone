@@ -1,0 +1,5 @@
+tabelid
+
+t142359_users -> id, username, password, email
+t142359_user_info -> id(primary auto increment), user_id(foreighn key), about_txt(NULL), 
+t142359_user_tweets -> id, user_id, tweet_txt(NULL);
